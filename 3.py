@@ -6,9 +6,9 @@ class point:
     def __str__(self):
         return '('+str(self.x)+','+str(self.y)+')'
     def __add__(self,other):
-        return Point(str(self.x+other.x)+','+str(self.y+other.y))
+        return point(str(self.x+other.x)+','+str(self.y+other.y))
     def __sub__(self,other):
-        return Point(str(self.x-other.x)+','+str(self.y-other.y))
+        return point(str(self.x-other.x)+','+str(self.y-other.y))
     def russt(self,other):
         return ((self.x-other.x)**2+(self.y-other.y)**2)**0.5
     def c_mas(self,other):
