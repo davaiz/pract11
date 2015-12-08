@@ -5,9 +5,9 @@ class Point:
     def __str__(self):
         return '('+str(self.x)+','+str(self.y)+')'
     def __add__(self,other):
-        return point(str(self.x+other.x)+','+str(self.y+other.y))
+        return Point(str(self.x+other.x)+','+str(self.y+other.y))
     def __sub__(self,other):
-        return point(str(self.x-other.x)+','+str(self.y-other.y))
+        return Point(str(self.x-other.x)+','+str(self.y-other.y))
     def russt(self,other):
         return ((self.x-other.x)**2+(self.y-other.y)**2)**0.5
     def Square(self,other,onemore):
